@@ -4,5 +4,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ParticipacaoTest {
-    // TODO: criar o objeto, chamar calcularPontos e verificar o resultado.
+
+    @Test
+    void deveCalcularPontos(){
+        Participacao participacao = new Participacao();
+
+        int resultado = participacao.calcularPontos(true, true);
+
+        assertEquals(3, resultado);
+    }
 }

@@ -48,5 +48,14 @@ class BoletimTest {
         assertEquals(5,resultado);
 
     }
-    // TODO: escrever os próximos testes durante a aula.
+
+    @Test
+    void deveContarAprovados(){
+        Boletim boletim = new Boletim();
+
+        double[] array = {4, 5, 7, 8, 6, 7, 3, 6, 7, 9, 8, 10};
+        int resultado = boletim.contarAprovados(array);
+
+        assertEquals(7, resultado);
+    }
 }
